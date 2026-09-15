@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #1b2b4b;
+  background: #f3f6fb;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---------- landing ---------- */
+.landing {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 20% 20%, #1a6fdb 0%, #0a1f44 55%, #05122b 100%);
+  color: #fff;
+  padding: 24px;
+}
+.landing-inner {
+  text-align: center;
+  max-width: 900px;
+}
+.landing h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+.landing p {
+  color: #b9c7e0;
+  margin: 0 0 32px;
+}
+.landing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.landing-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 28px 26px;
+  text-decoration: none;
+  text-align: left;
+  transition: transform 0.15s, background 0.15s;
+}
+.landing-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.14);
+}
+.landing-card h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+.landing-card .tag {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8fc1ff;
+  margin-bottom: 12px;
+}
+.landing-card p {
+  margin: 0 0 14px;
+  color: #d5deee;
+  font-size: 14px;
+}
+.landing-card code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.landing-card .creds {
+  font-size: 13px;
+  color: #b9c7e0;
+  display: grid;
+  gap: 4px;
+}
